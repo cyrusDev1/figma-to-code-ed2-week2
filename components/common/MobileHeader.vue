@@ -39,10 +39,10 @@
     <transition name="slide-fade">
       <div
         v-if="active"
-        class="flex shadow justify-center absolute w-full py-10 bg-white"
+        class="flex transform transition-transform duration-100 ease-in-out shadow justify-center absolute w-full py-5 bg-white"
       >
-        <div class="space-y-10">
-          <ul class="text-center space-y-4">
+        <div class="space-y-6">
+          <ul class="text-center space-y-2">
             <li>
               <Link to="/" class="text-black text-xl hover:text-neutral-700"
                 >Men</Link
@@ -83,7 +83,7 @@
               </Link>
             </li>
           </ul>
-          <ul class="text-center space-y-4">
+          <ul class="text-center space-y-2">
             <li>
               <Link to="/" class="text-black text-xl hover:text-neutral-700"
                 >FAQ</Link

@@ -1,5 +1,5 @@
 <template>
-  <AlertMessage></AlertMessage>
+  <AlertMessage class=""></AlertMessage>
   <div class="mx-32 hidden xl:block">
     <Header></Header>
   </div>
