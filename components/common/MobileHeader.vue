@@ -39,7 +39,7 @@
     <transition name="slide-fade">
       <div
         v-if="active"
-        class="flex justify-center absolute w-full py-10 bg-white"
+        class="flex shadow justify-center absolute w-full py-10 bg-white"
       >
         <div class="space-y-10">
           <ul class="text-center space-y-4">
