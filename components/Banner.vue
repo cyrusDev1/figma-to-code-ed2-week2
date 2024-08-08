@@ -1,9 +1,9 @@
 <template>
   <div
-    class="banner flex justify-center rounded-2xl md:rounded-5xl py-11 md:py-24 px-6 xl:px-20 mt-10 mx-5 md:mx-11 xl:mx-32"
+    class="banner flex justify-center rounded-2xl md:rounded-5xl py-11 md:py-24 px-2 xl:px-20 mt-10 mx-5 md:mx-11 xl:mx-32"
   >
     <div class="space-y-4 md:space-y-5 xl:space-y-10">
-      <div class="flex space-x-3 justify-center items-center">
+      <div class="flex space-x-2 md:space-x-3 justify-center items-center">
         <span class="block text-white border-b w-10 md:w-16"></span>
         <span class="text-white text-xs md:text-sm"
           >We bring new fashion to the world</span

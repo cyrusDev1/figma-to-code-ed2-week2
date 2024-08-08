@@ -1,7 +1,7 @@
 <template>
   <div class="mx-5 xl:mx-60 space-y-9 mb-20">
     <div class="text-center">
-      <h1 class="text-4xl font-semibold">OUR COLLECTION</h1>
+      <h1 class="text-2xl md:text-4xl font-semibold">OUR COLLECTION</h1>
       <p class="font-medium text-lg text-black-gray">
         Our latest collection, where classic and contemporary styles converge in
         perfect harmony.

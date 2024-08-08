@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="">
-      <Link to="/product" class="block text-3xl font-semibold"
+      <Link to="/product" class="block text-2xl md:text-3xl font-semibold"
         >SUMMER SHIRT</Link
       >
       <span class="text-2xl font-semibold text-black-gray">$99</span>

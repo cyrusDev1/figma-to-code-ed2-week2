@@ -1,6 +1,6 @@
 <template>
   <div class="md:flex justify-center mt-12 md:mt-20">
-    <ul class="flex flex-wrap gap-y-3 gap-x-2">
+    <ul class="flex flex-wrap gap-y-3 gap-x-1">
       <Filter :data="data" class="py-2 px-3"></Filter>
     </ul>
   </div>
