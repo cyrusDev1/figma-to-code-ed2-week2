@@ -1,11 +1,11 @@
 <template>
   <div
-    class="xl:flex xl:space-x-11 space-y-8 xl:space-y-0 mx-5 xl:mx-32 my-20 h-auto"
+    class="xl:flex xl:space-x-11 space-y-8 xl:space-y-0 mx-5 xl:mx-32 my-10 md:my-20 h-auto"
   >
     <div class="w-full flex-1 items-stretch h-auto">
       <div class="w-full h-auto flex items-stretch">
         <img
-          class="w-full h-full object-cover rounded-4xl"
+          class="w-full h-full object-cover rounded-2xl md:rounded-4xl"
           src="~/assets/images/product-detail.png"
           alt="Product Image"
         />
