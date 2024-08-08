@@ -32,8 +32,8 @@ import Link from "~/components/ui/Link.vue";
 import ProductItem from "~/components/product/ProductItem.vue";
 import Filter from "~/components/product/Filter.vue";
 
-const names = ["All", "Accessories", "Featured", "Unisex"];
-const counts = [132, 13, 67, 52];
+const names = ["All", "Accessories", "Unisex", "Featured"];
+const counts = [132, 13, 52, 67];
 const data = names.map((name, index) => ({
   name,
   count: counts[index] || 0,
