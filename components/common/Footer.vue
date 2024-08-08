@@ -11,11 +11,11 @@
           <Input
             placeholder="Your email"
             type="text"
-            class="placeholder-white w-full text-sm border border-white bg-black text-white p-3 md:p-4 rounded-full outline-none"
+            class="placeholder-white w-full text-sm border border-white bg-black text-white px-3 py-2 md:p-3  md:p-4 rounded-full outline-none"
           ></Input>
           <Button
             type="text"
-            class="hover:opacity-90 p-3 px-10 bg-white font-semibold rounded-full"
+            class="hover:opacity-90 px-6 py-2 md:p-3 text-sm md:text-base md:px-10 bg-white font-semibold rounded-full"
             >Suscribe</Button
           >
         </div>
