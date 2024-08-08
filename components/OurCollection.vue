@@ -11,7 +11,7 @@
       class="md:flex w-full md:flex-row-reverse gap-x-4 space-y-4 md:space-y-0"
     >
       <div
-        class="py-48 px-2 w-full banner rounded-2xl md:rounded-4xl flex justify-center items-center"
+        class="py-48 px-2 w-full banner rounded-4xl flex justify-center items-center"
       >
         <div class="text-center">
           <h3 class="text-white text-center text-4xl font-chillax font-bold">
@@ -22,9 +22,9 @@
           </p>
         </div>
       </div>
-      <div class="w-full xl:w-1/2 rounded-2xl xl:rounded-none relative">
+      <div class="w-full xl:w-1/2 rounded-4xl xl:rounded-none relative">
         <img
-          class="relative w-full rounded-2xl xl:rounded-none h-full"
+          class="relative w-full rounded-4xl xl:rounded-none h-full"
           src="~/assets/images/our-collection/2.png"
           alt=""
         />
