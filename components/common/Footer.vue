@@ -11,7 +11,7 @@
           <Input
             placeholder="Your email"
             type="text"
-            class="placeholder-white w-full text-sm border border-white bg-black text-white px-3 py-2 md:p-3  md:p-4 rounded-full outline-none"
+            class="placeholder-white w-full text-sm border border-white bg-black text-white px-3 py-2 md:p-3 md:p-4 rounded-full outline-none"
           ></Input>
           <Button
             type="text"

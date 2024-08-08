@@ -52,7 +52,7 @@
             </Link>
           </li>
           <li>
-            <Link to="/" class="text-black text-base hover:text-neutral-700"
+            <Link to="/cart" class="text-black text-base hover:text-neutral-700"
               >Cart(0)</Link
             >
           </li>

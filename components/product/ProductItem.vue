@@ -1,6 +1,9 @@
 <template>
   <div class="space-y-4 w-full">
-    <div class="relative group cursor-pointer w-full">
+    <div
+      @click="redirectToProduct"
+      class="relative group cursor-pointer w-full"
+    >
       <div
         class="rounded-3xl transition transition-duration-400 absolute opacity-30 group-hover:bg-gray-800 w-full h-full"
       ></div>
@@ -43,4 +46,12 @@
 <script setup>
 import Button from "~/components/ui/Button.vue";
 import Link from "~/components/ui/Link.vue";
+
+import { useRouter } from "nuxt/app";
+
+const router = useRouter();
+
+function redirectToProduct() {
+  router.push("/product");
+}
 </script>

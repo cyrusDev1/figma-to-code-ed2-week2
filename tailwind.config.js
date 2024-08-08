@@ -11,6 +11,7 @@ export const theme = {
   extend: {
     fontFamily: {
       chillax: ["Chillax", "sans-serif"],
+      archivo: ["Archivo", "sans-serif"],
     },
     borderRadius: {
       "4xl": "32px",

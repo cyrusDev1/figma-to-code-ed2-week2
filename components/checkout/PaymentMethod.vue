@@ -2,7 +2,7 @@
   <div class="w-full space-y-4">
     <div class="space-y-3">
       <h2 class="text-lg font-bold">Select payment method</h2>
-      <div class="flex w-full space-x-5">
+      <div class="flex w-full space-x-2 md:space-x-5">
         <div
           class="hover:bg-gray-100 transition transition-duration-400 cursor-pointer w-full py-4 px-3 border border-black-gray rounded-xl flex flex-col space-y-2"
         >

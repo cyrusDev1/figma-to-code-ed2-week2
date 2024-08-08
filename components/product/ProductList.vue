@@ -8,12 +8,7 @@
     <div
       class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-10 xl:px-28"
     >
-      <ProductItem></ProductItem>
-      <ProductItem></ProductItem>
-      <ProductItem></ProductItem>
-      <ProductItem></ProductItem>
-      <ProductItem></ProductItem>
-      <ProductItem></ProductItem>
+      <ProductItem v-for="i in 6"></ProductItem>
     </div>
     <div class="flex justify-center">
       <Link
