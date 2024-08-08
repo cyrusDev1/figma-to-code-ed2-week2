@@ -19,8 +19,10 @@
             >
           </li>
           <li>
-            <Link to="/" class="text-black text-base hover:text-neutral-700"
-              >Collection</Link
+            <Link
+              to="/collections"
+              class="text-black text-base hover:text-neutral-700"
+              >Collections</Link
             >
           </li>
         </ul>

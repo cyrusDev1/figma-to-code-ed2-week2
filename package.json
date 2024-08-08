@@ -12,6 +12,8 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@nuxt/http": "^0.6.4",
+    "graphql-request": "^7.1.0",
     "gsap": "^3.12.5",
     "nuxt": "^3.12.4",
     "vue": "latest"
