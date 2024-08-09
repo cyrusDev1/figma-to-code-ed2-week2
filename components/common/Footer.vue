@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black py-6 xl:py-14 px-5 xl:px-32 space-y-8 bottom-0 w-full">
-    <div class="xl:flex space-y-5 xl:space-y-0 space-x-40">
+    <div class="xl:flex space-y-5 xl:space-y-0 xl:space-x-40">
       <div class="space-y-5">
         <img src="~/assets/images/logo-white.svg" alt="" />
         <p class="text-white text-gray-white">

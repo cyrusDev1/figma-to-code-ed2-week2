@@ -37,9 +37,11 @@
       </div>
     </Link>
     <div class="">
-      <Link to="/product" class="block text-2xl md:text-3xl font-semibold">{{
-        product.title
-      }}</Link>
+      <Link
+        :to="`/product/${product.handle}`"
+        class="block text-2xl md:text-3xl font-semibold"
+        >{{ product.title }}</Link
+      >
       <p class="text-2xl flex space-x-2 font-semibold text-black-gray">
         <span>{{ product.variants?.edges[0].node.price.currencyCode }}</span>
         <span>{{ product.variants?.edges[0].node.price.amount }}</span>

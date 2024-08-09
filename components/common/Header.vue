@@ -18,8 +18,10 @@
             >
           </li>
           <li>
-            <Link to="/" class="text-black text-base hover:text-neutral-700"
-              >Kids</Link
+            <Link
+              to="/collections/unisex"
+              class="text-black text-base hover:text-neutral-700"
+              >Unisex</Link
             >
           </li>
           <li>

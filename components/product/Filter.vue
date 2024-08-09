@@ -17,7 +17,8 @@
 </template>
 
 <script setup>
-import { defineProps, computed } from "vue";
+import { defineProps, computed, defineEmits } from "vue";
+const emit = defineEmits(["updateFilter"]);
 
 import { ref } from "vue";
 import Link from "~/components/ui/Link.vue";
@@ -37,6 +38,7 @@ const hoverCategory = ref(null);
 
 const setActiveCategory = (category) => {
   activeCategory.value = category;
+  emit("updateFilter", category);
 };
 
 const setHoverCategory = (category) => {
