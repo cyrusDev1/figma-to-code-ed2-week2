@@ -1,8 +1,8 @@
 <template>
-  <div class="space-y-4 w-full">
-    <div
-      @click="redirectToProduct"
-      class="relative group cursor-pointer w-full"
+  <div v-if="product" class="space-y-4 w-full">
+    <Link
+      :to="`/product/${product.handle}`"
+      class="z-100 relative group cursor-pointer w-full"
     >
       <div
         class="rounded-3xl transition transition-duration-400 absolute opacity-30 group-hover:bg-gray-800 w-full h-full"
@@ -12,20 +12,21 @@
       >
         GET OFF 20%
       </div>
+
       <img
         class="rounded-3xl w-full object-cover"
-        src="~/assets/images/product.png"
+        :src="product.featuredImage.url"
       />
       <div class="flex justify-center w-full">
         <div
-          class="transition transition-duration-400 absolute hidden group-hover:flex bottom-3 px-5 space-x-1"
+          class="transition transition-duration-400 absolute hidden px-1 group-hover:flex bottom-3 space-x-1"
         >
           <Link
             to="/cart"
-            class="flex items-center space-x-2 bg-white rounded-3xl font-extrabold font-mono text-sm text-black p-2 px-2"
+            class="flex items-center space-x-1 bg-white rounded-2xl md:rounded-3xl font-extrabold md:font-mono text-xs md:text-sm text-black md:p-2 px-2"
           >
-            <img class="" src="~/assets/images/icons/cart-two.svg" />
-            <span class="mt-1">ADD TO CART</span>
+            <img class="size-4" src="~/assets/images/icons/cart-two.svg" />
+            <span class="md:mt-1">ADD TO CART</span>
           </Link>
           <Button
             class="hover:opacity-90 flex items-center space-x-2 border rounded-3xl font-extrabold text-sm text-white p-2 px-6"
@@ -34,24 +35,36 @@
           </Button>
         </div>
       </div>
-    </div>
+    </Link>
     <div class="">
-      <Link to="/product" class="block text-2xl md:text-3xl font-semibold"
-        >SUMMER SHIRT</Link
-      >
-      <span class="text-2xl font-semibold text-black-gray">$99</span>
+      <Link to="/product" class="block text-2xl md:text-3xl font-semibold">{{
+        product.title
+      }}</Link>
+      <p class="text-2xl flex space-x-2 font-semibold text-black-gray">
+        <span>{{ product.variants?.edges[0].node.price.currencyCode }}</span>
+        <span>{{ product.variants?.edges[0].node.price.amount }}</span>
+      </p>
     </div>
   </div>
 </template>
 <script setup>
 import Button from "~/components/ui/Button.vue";
 import Link from "~/components/ui/Link.vue";
+import { ref, onMounted } from "vue";
 
 import { useRouter } from "nuxt/app";
 
 const router = useRouter();
 
-function redirectToProduct() {
-  router.push("/product");
-}
+import { defineProps, computed } from "vue";
+
+const props = defineProps({
+  product: {
+    type: Array,
+    required: false,
+  },
+});
+onMounted(async () => {
+  console.log(props.product);
+});
 </script>

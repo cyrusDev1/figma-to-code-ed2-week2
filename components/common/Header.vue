@@ -4,12 +4,16 @@
       <div>
         <ul class="flex space-x-5">
           <li>
-            <Link to="/" class="text-black text-base hover:text-neutral-700"
+            <Link
+              to="/collections/men"
+              class="text-black text-base hover:text-neutral-700"
               >Men</Link
             >
           </li>
           <li>
-            <Link to="/" class="text-black text-base hover:text-neutral-700"
+            <Link
+              to="/collections/women"
+              class="text-black text-base hover:text-neutral-700"
               >Women</Link
             >
           </li>
