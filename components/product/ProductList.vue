@@ -8,9 +8,9 @@
       ></Filter>
     </ul>
   </div>
-  <div class="space-y-8" v-if="products">
+  <div class="space-y-32" v-if="products">
     <div
-      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mt-10 xl:px-28"
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-32 mt-10 xl:px-28"
     >
       <ProductItem
         v-for="product in products"

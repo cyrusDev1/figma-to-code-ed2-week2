@@ -10,6 +10,7 @@ export const useAllProducts = async () => {
           node {
             id
             title
+            handle
             description
             featuredImage {
               url

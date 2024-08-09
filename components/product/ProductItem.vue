@@ -14,7 +14,7 @@
       </div>
 
       <img
-        class="rounded-3xl w-full object-cover"
+        class="rounded-3xl w-full h-full object-cover"
         :src="product.featuredImage.url"
       />
       <div class="flex justify-center w-full">
@@ -23,13 +23,13 @@
         >
           <Link
             to="/cart"
-            class="flex items-center space-x-1 bg-white rounded-2xl md:rounded-3xl font-extrabold md:font-mono text-xs md:text-sm text-black md:p-2 px-2"
+            class="flex items-center space-x-2 bg-white rounded-full font-extrabold md:font-mono text-xs md:text-sm text-black py-1 md:p-2 px-3"
           >
             <img class="size-4" src="~/assets/images/icons/cart-two.svg" />
             <span class="md:mt-1">ADD TO CART</span>
           </Link>
           <Button
-            class="hover:opacity-90 flex items-center space-x-2 border rounded-3xl font-extrabold text-sm text-white p-2 px-6"
+            class="hover:opacity-90 flex items-center space-x-2 border rounded-full font-extrabold text-sm text-white p-2 px-6"
           >
             <span class="">BUY NOW</span>
           </Button>
