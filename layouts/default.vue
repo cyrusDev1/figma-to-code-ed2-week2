@@ -1,13 +1,24 @@
 <template>
-  <AlertMessage class=""></AlertMessage>
-  <div class="mx-32 hidden xl:block">
-    <Header></Header>
-  </div>
-  <div class="xl:hidden">
-    <MobileHeader></MobileHeader>
-  </div>
-  <slot></slot>
-  <div class="">
+  <div class="flex flex-col min-h-screen">
+    <!-- Alert Message -->
+    <AlertMessage class=""></AlertMessage>
+
+    <!-- Header (Desktop) -->
+    <div class="mx-32 hidden xl:block">
+      <Header></Header>
+    </div>
+
+    <!-- Header (Mobile) -->
+    <div class="xl:hidden">
+      <MobileHeader></MobileHeader>
+    </div>
+
+    <!-- Slot for Page Content -->
+    <main class="flex-grow">
+      <slot></slot>
+    </main>
+
+    <!-- Footer -->
     <Footer></Footer>
   </div>
 </template>

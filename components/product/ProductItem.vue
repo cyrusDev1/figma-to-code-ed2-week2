@@ -2,7 +2,7 @@
   <div v-if="product" class="space-y-4 w-full">
     <Link
       :to="`/product/${product.handle}`"
-      class="z-100 relative group cursor-pointer w-full"
+      class="z-100 relative block group cursor-pointer w-full"
     >
       <div
         class="rounded-3xl transition transition-duration-400 absolute opacity-30 group-hover:bg-gray-800 w-full h-full"

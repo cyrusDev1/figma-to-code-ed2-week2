@@ -10,7 +10,9 @@
         :product="product.node"
       ></ProductItem>
     </div>
-    <p v-else class="text-2xl mt-10">Loading...</p>
+    <div v-else>
+      <Loader></Loader>
+    </div>
   </div>
 </template>
 

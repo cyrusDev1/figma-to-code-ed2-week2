@@ -103,13 +103,14 @@
   </div>
 
   <div v-else>
-    <p>Loading...</p>
+    <Loader></Loader>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import Link from "~/components/ui/Link.vue";
+import Loader from "~/components/common/Loader.vue";
 import Button from "~/components/ui/Button.vue";
 import ProductItem from "~/components/product/ProductItem.vue";
 import Filter from "~/components/product/Filter.vue";
