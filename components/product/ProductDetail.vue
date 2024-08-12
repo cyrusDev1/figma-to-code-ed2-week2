@@ -65,8 +65,8 @@
             >BUY NOW</Button
           >
           <Link
-            to="/cart"
-            class="hover:bg-black hover:text-white transition-colors duration-100 border border-black rounded-full py-3 md:py-6 text-sm text-center w-full"
+            @click="addToCart(activeVariant)"
+            class="cursor-pointer hover:bg-black hover:text-white transition-colors duration-100 border border-black rounded-full py-3 md:py-6 text-sm text-center w-full"
           >
             ADD TO CART</Link
           >
@@ -101,7 +101,6 @@
       </div>
     </div>
   </div>
-
   <div v-else>
     <Loader></Loader>
   </div>
@@ -115,7 +114,11 @@ import Button from "~/components/ui/Button.vue";
 import ProductItem from "~/components/product/ProductItem.vue";
 import Filter from "~/components/product/Filter.vue";
 import { defineProps, computed } from "vue";
+import { useCartStore } from "~/stores/cart";
+import { useRouter } from "vue-router";
+
 const names = ["XS", "S", "M", "L", "XL"];
+const router = useRouter();
 
 const counts = [];
 const data = names.map((name, index) => ({
@@ -146,7 +149,17 @@ const selectVarient = (variant) => {
   activeVariant.value = variant;
 };
 
-onMounted(async () => {});
+onMounted(async () => {
+  const cartItems = computed(() => cartStore.cartItems);
+  console.log(cartItems);
+});
+
+const cartStore = useCartStore();
+
+const addToCart = (activeVariant) => {
+  cartStore.addItem(activeVariant.node, props.detail.title);
+  router.push("/cart");
+};
 </script>
 
 <style scoped>

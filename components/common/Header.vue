@@ -61,7 +61,7 @@
           </li>
           <li>
             <Link to="/cart" class="text-black text-base hover:text-neutral-700"
-              >Cart(0)</Link
+              >Cart({{ cartStore.totalItem }})</Link
             >
           </li>
           <li>
@@ -80,4 +80,7 @@
 
 <script setup>
 import Link from "~/components/ui/Link.vue";
+
+import { useCartStore } from "~/stores/cart";
+const cartStore = useCartStore();
 </script>

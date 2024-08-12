@@ -1,8 +1,13 @@
 <template>
   <div class="xl:w-3/4">
     <div class="flex justify-between items-center w-full">
-      <span class="font-semibold font-chillax text-2xl">Cart(3)</span>
-      <div class="bg-[#e5e5e5] cursor-pointer rounded-full flex p-2 space-x-1">
+      <span class="font-semibold font-chillax text-2xl"
+        >Cart({{ cartStore.totalItem }})</span
+      >
+      <div
+        @click="cartStore.removeAllItems()"
+        class="bg-[#e5e5e5] cursor-pointer rounded-full flex p-2 space-x-1"
+      >
         <img src="~/assets/images/icons/trash-gray.svg" />
         <span class="text-sm text-black-gray">Clear Cart</span>
       </div>
@@ -17,7 +22,7 @@
           </tr>
         </thead>
         <tbody>
-          <CartItem v-for="i in 3"></CartItem>
+          <CartItem v-for="cart in cartStore.items" :cart="cart"></CartItem>
         </tbody>
       </table>
     </div>
@@ -27,4 +32,6 @@
 <script setup>
 import { ref } from "vue";
 import ProductItem from "~/components/cart/CartItem.vue";
+import { useCartStore } from "~/stores/cart";
+const cartStore = useCartStore();
 </script>

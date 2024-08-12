@@ -14,7 +14,9 @@
         class="py-48 px-2 w-full banner rounded-4xl flex justify-center items-center"
       >
         <div class="text-center">
-          <h3 class="text-white text-center text-4xl font-chillax font-bold">
+          <h3
+            class="text-white text-center text-4xl font-chillax font-bold text-transparent text-stroke text-stroke-b-white"
+          >
             CLASSIC MEN
           </h3>
           <p class="text-center text-white text-lg font-normal">
@@ -53,5 +55,9 @@ import Link from "~/components/ui/Link.vue";
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.text-stroke {
+  -webkit-text-stroke-width: var(--tst-text-stroke-width, thin);
+  -webkit-text-stroke-color: var(--tst-text-stroke-color, #fff);
 }
 </style>

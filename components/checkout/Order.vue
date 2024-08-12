@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="space-y-3">
-      <OrderItem v-for="i in 3"></OrderItem>
+      <OrderItem v-for="cart in cartStore.items" :cart="cart"></OrderItem>
     </div>
     <div class="space-y-1">
       <span class="text-sm">Discount Code</span>
@@ -35,16 +35,16 @@
     <div class="border-b space-y-1 text-black-gray pb-4">
       <div class="flex justify-between">
         <span>Sutotal</span>
-        <span>$524.00</span>
+        <span>CAD {{ cartStore.totalPrice }}</span>
       </div>
       <div class="flex justify-between">
         <span>Discount</span>
-        <span>$0</span>
+        <span>CAD 0</span>
       </div>
     </div>
     <div class="flex font-semibold justify-between">
       <span>Order total</span>
-      <span>$524.00</span>
+      <span>CAD {{ cartStore.totalPrice }}</span>
     </div>
   </div>
 </template>
@@ -52,4 +52,7 @@
 import Link from "~/components/ui/Link.vue";
 import Button from "~/components/ui/Button.vue";
 import OrderItem from "~/components/checkout/OrderItem.vue";
+import { ref } from "vue";
+import { useCartStore } from "~/stores/cart";
+const cartStore = useCartStore();
 </script>

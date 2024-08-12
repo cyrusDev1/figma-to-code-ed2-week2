@@ -67,7 +67,7 @@
       <div class="flex justify-center">
         <Link
           to="/payment"
-          class="hover:opacity-90 flex w-full md:w-2/3 items-center space-x-2 justify-center p-3 px-20 bg-black text-white font-semibold rounded-full"
+          class="hover:opacity-90 flex w-full md:w-2/3 items-center space-x-2 hover:space-x-4 justify-center p-3 px-20 bg-black text-white font-semibold rounded-full"
         >
           <span>Pay $524.00</span>
           <img class="" src="~/assets/images/icons/arrow-right.svg" />

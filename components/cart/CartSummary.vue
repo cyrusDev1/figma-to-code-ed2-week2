@@ -8,22 +8,33 @@
         <div class="border-b space-y-1 text-black-gray pb-4">
           <div class="flex justify-between">
             <span>Sutotal</span>
-            <span>$524.00</span>
+            <span>CAD {{ cartStore.totalPrice }}</span>
           </div>
           <div class="flex justify-between">
             <span>Discount</span>
-            <span>$0</span>
+            <span>CAD 0</span>
           </div>
         </div>
         <div class="space-y-2">
           <div class="flex font-semibold justify-between">
             <span>Order total</span>
-            <span>$524.00</span>
+            <span>CAD {{ cartStore.totalPrice }}</span>
           </div>
           <div>
             <Link
+              v-if="cartStore.totalPrice"
               to="/checkout"
+              :class="{
+                'cursor-not-allowed opacity-50': !cartStore.totalPrice,
+              }"
               class="hover:opacity-90 bg-black w-full flex justify-center items-center space-x-2 border rounded-3xl font-extrabold text-sm text-white p-3"
+            >
+              <span class="">Checkout now</span>
+            </Link>
+            <Link
+              v-else
+              to=""
+              class="cursor-not-allowed opacity-50 bg-black w-full flex justify-center items-center space-x-2 border rounded-3xl font-extrabold text-sm text-white p-3"
             >
               <span class="">Checkout now</span>
             </Link>
@@ -36,6 +47,9 @@
 <script setup>
 import Link from "~/components/ui/Link.vue";
 import Button from "~/components/ui/Button.vue";
+import { ref } from "vue";
+import { useCartStore } from "~/stores/cart";
+const cartStore = useCartStore();
 </script>
 <style>
 .fit-content {
