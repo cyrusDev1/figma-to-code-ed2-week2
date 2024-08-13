@@ -20,6 +20,7 @@ export const theme = {
     colors: {
       "black-gray": "#7E7E7E",
       "gray-white": "#C3C3C3",
+      "black": "#1D1D1D",
     },
   },
   screens: {
