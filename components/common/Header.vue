@@ -41,7 +41,9 @@
       <div>
         <ul class="flex items-center space-x-5">
           <li>
-            <Link to="/" class="text-black text-base hover:text-neutral-700"
+            <Link
+              to="/collections"
+              class="text-black text-base hover:text-neutral-700"
               >Shop</Link
             >
           </li>

@@ -36,13 +36,10 @@
           />
         </div>
         <div
+          @click="cartStore.removeItem(cart.id)"
           class="p-2 md:p-3 bg-[#e5e5e5] cursor-pointer rounded-full flex p-2 justify-between"
         >
-          <img
-            @click="cartStore.removeItem(cart.id)"
-            class="size-4"
-            src="~/assets/images/icons/trash.svg"
-          />
+          <img class="size-4" src="~/assets/images/icons/trash.svg" />
         </div>
       </div>
     </td>

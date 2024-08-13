@@ -17,9 +17,13 @@ export const useAllProducts = async () => {
             }
             variants(first: 1) {
               edges {
+                cursor
                 node {
                   id
                   title
+                  image {
+                    url
+                  }
                   price {
                     amount
                     currencyCode

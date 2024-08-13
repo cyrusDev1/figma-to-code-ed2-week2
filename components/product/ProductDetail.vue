@@ -60,6 +60,7 @@
         </div>
         <div class="flex space-x-3">
           <Button
+            @click="buyNow(activeVariant)"
             type="button"
             class="hover:opacity-80 bg-black text-white rounded-full py-3 md:py-6 text-sm text-center w-full"
             >BUY NOW</Button
@@ -100,9 +101,6 @@
         </ProductItem>
       </div>
     </div>
-  </div>
-  <div v-else>
-    <Loader></Loader>
   </div>
 </template>
 
@@ -159,6 +157,11 @@ const cartStore = useCartStore();
 const addToCart = (activeVariant) => {
   cartStore.addItem(activeVariant.node, props.detail.title);
   router.push("/cart");
+};
+
+const buyNow = (activeVariant) => {
+  cartStore.addItem(activeVariant.node, props.detail.title);
+  router.push("/checkout");
 };
 </script>
 

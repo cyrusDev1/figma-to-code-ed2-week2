@@ -8,7 +8,7 @@
       ></Filter>
     </ul>
   </div>
-  <div class="space-y-8" v-if="products">
+  <div class="space-y-8" v-if="products.length">
     <div
       class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-8 mt-10 xl:px-28"
     >
@@ -38,6 +38,7 @@ import ProductItem from "~/components/product/ProductItem.vue";
 import Filter from "~/components/product/Filter.vue";
 import { useAllProducts } from "~/composables/useAllProducts";
 import { useCollectionByHandle } from "~/composables/useCollectionByHandle";
+import Loader from "~/components/common/Loader.vue";
 
 const names = ["All", "Accessories", "Unisex", "Featured"];
 const counts = [132, 13, 52, 67];

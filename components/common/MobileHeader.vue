@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="">
     <div class="mx-5 py-5 border-b">
       <div class="flex justify-between items-center">
         <div class="cursor-pointer" v-if="active" @click="closeMenu()">
@@ -39,27 +39,35 @@
     <transition name="slide-fade">
       <div
         v-if="active"
-        class="flex transform transition-transform duration-100 ease-in-out shadow justify-center absolute w-full py-5 bg-white"
+        class="flex z-10 transform transition-transform duration-100 ease-in-out shadow justify-center absolute w-full py-5 bg-white"
       >
         <div class="space-y-6">
           <ul class="text-center space-y-2">
             <li>
-              <Link to="/" class="text-black text-xl hover:text-neutral-700"
+              <Link
+                to="/collections/men"
+                class="text-black text-xl hover:text-neutral-700"
                 >Men</Link
               >
             </li>
             <li>
-              <Link to="/" class="text-black text-xl hover:text-neutral-700"
+              <Link
+                to="/collections/women"
+                class="text-black text-xl hover:text-neutral-700"
                 >Women</Link
               >
             </li>
             <li>
-              <Link to="/" class="text-black text-xl hover:text-neutral-700"
-                >Kids</Link
+              <Link
+                to="/collections/unisex"
+                class="text-black text-xl hover:text-neutral-700"
+                >Unisex</Link
               >
             </li>
             <li>
-              <Link to="/" class="text-black text-xl hover:text-neutral-700"
+              <Link
+                to="/collections"
+                class="text-black text-xl hover:text-neutral-700"
                 >Collection</Link
               >
             </li>

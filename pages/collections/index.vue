@@ -3,7 +3,7 @@
     <h2 class="text-4xl font-bold font-chillax">Collections</h2>
     <div
       v-if="collections"
-      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-12 xl:gap-y-20 mt-8"
+      class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-x-5 gap-y-20 mt-8"
     >
       <div v-for="collection in collections.edges" class="space-y-4">
         <div class="rounded-2xl h-full shadow-xl">
@@ -39,6 +39,7 @@
 import Link from "~/components/ui/Link.vue";
 import { ref, onMounted } from "vue";
 import { useCollections } from "~/composables/useCollections";
+import Loader from "~/components/common/Loader.vue";
 
 const collections = ref(null);
 

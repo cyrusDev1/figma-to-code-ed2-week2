@@ -1,10 +1,12 @@
 <template>
   <section class="mb-24">
     <ProductDetail v-if="data" :detail="data"></ProductDetail>
+    <Loader v-else></Loader>
   </section>
 </template>
 
 <script setup>
+import Loader from "~/components/common/Loader.vue";
 import { useRoute } from "#app";
 import { useProduct } from "~/composables/useProduct";
 import ProductDetail from "~/components/product/ProductDetail.vue";

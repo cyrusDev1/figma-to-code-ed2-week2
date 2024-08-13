@@ -20,6 +20,7 @@
 import { useRoute } from "#app";
 import { useCollectionByHandle } from "~/composables/useCollectionByHandle";
 import ProductItem from "~/components/product/ProductItem.vue";
+import Loader from "~/components/common/Loader.vue";
 
 const route = useRoute();
 const handle = route.params.handle;
