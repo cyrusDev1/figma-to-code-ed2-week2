@@ -22,7 +22,7 @@
       </div>
       <div class="grid grid-cols-3 gap-4 md:gap-14 text-white">
         <div class="space-y-2">
-          <h3 class="text-md font-semibold">Product</h3>
+          <h3 class="text-sm md:text-md font-semibold">Product</h3>
           <ul class="">
             <li
               class="text-xs md:text-base text-gray-white hover:text-white hover:scale-95 transition transition-duration-200"
@@ -52,7 +52,7 @@
           </ul>
         </div>
         <div class="space-y-2">
-          <h3 class="text-md font-semibold">Categories</h3>
+          <h3 class="text-sm md:text-md font-semibold">Categories</h3>
           <ul class="">
             <li
               class="text-xs md:text-base text-gray-white hover:text-white hover:scale-95 transition transition-duration-200"
@@ -82,7 +82,7 @@
           </ul>
         </div>
         <div class="space-y-2">
-          <h3 class="text-md font-semibold">Our Social Media</h3>
+          <h3 class="text-sm md:text-md font-semibold">Our Social Media</h3>
           <ul class="">
             <li
               class="text-xs md:text-base text-gray-white hover:text-white hover:scale-95 transition transition-duration-200"
