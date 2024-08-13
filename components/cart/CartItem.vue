@@ -9,7 +9,7 @@
             cart.title
           }}</span>
           <span class="font-semibold text-xs md:text-sm">{{
-            cart.price.currencyCode + " " + cart.price.amount
+            "$" + " " + cart.price.amount
           }}</span>
         </div>
       </div>
@@ -45,7 +45,7 @@
     </td>
     <td>
       <span class="font-semibold text-sm">{{
-        cart.price.currencyCode + " " + cart.price.amount * cart.quantity
+        "$ " + cart.price.amount * cart.quantity
       }}</span>
     </td>
   </tr>

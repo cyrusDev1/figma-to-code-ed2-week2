@@ -8,25 +8,22 @@
         <div class="border-b space-y-1 text-black-gray pb-4">
           <div class="flex justify-between">
             <span>Sutotal</span>
-            <span>CAD {{ cartStore.totalPrice }}</span>
+            <span>$ {{ cartStore.totalPrice }}</span>
           </div>
           <div class="flex justify-between">
             <span>Discount</span>
-            <span>CAD 0</span>
+            <span>$ 0</span>
           </div>
         </div>
         <div class="space-y-2">
           <div class="flex font-semibold justify-between">
             <span>Order total</span>
-            <span>CAD {{ cartStore.totalPrice }}</span>
+            <span>$ {{ cartStore.totalPrice }}</span>
           </div>
           <div>
             <Link
               v-if="cartStore.totalPrice"
               to="/checkout"
-              :class="{
-                'cursor-not-allowed opacity-50': !cartStore.totalPrice,
-              }"
               class="hover:opacity-90 bg-black w-full flex justify-center items-center space-x-2 border rounded-3xl font-extrabold text-sm text-white p-3"
             >
               <span class="">Checkout now</span>

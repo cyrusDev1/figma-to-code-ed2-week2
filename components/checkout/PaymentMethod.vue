@@ -69,7 +69,7 @@
           to="/payment"
           class="hover:opacity-90 flex w-full md:w-2/3 items-center space-x-2 hover:space-x-4 justify-center p-3 px-20 bg-black text-white font-semibold rounded-full"
         >
-          <span>Pay $524.00</span>
+          <span>Pay $ {{ cartStore.totalPrice }}</span>
           <img class="" src="~/assets/images/icons/arrow-right.svg" />
         </Link>
       </div>
@@ -80,8 +80,10 @@
 import Link from "~/components/ui/Link.vue";
 import Button from "~/components/ui/Button.vue";
 import Input from "~/components/ui/Input.vue";
-
+import { defineProps, computed } from "vue";
 import { ref } from "vue";
+import { useCartStore } from "~/stores/cart";
+const cartStore = useCartStore();
 
 const deliveryForm = ref([
   {
