@@ -31,7 +31,7 @@
             <Link
               v-else
               to=""
-              class="cursor-not-allowed opacity-50 bg-black w-full flex justify-center items-center space-x-2 border rounded-3xl font-extrabold text-sm text-white p-3"
+              class="cursor-not-allowed bg-black w-full flex justify-center items-center space-x-2 border rounded-3xl font-extrabold text-sm text-white p-3"
             >
               <span class="">Checkout now</span>
             </Link>
